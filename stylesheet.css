@@ -44,7 +44,6 @@ header a:hover{
 .main-contents{
     width: 1500px;
     height: 680px;
-    background-color: rgb(31, 30, 30);
     background-image: url(photo/rekka-image01.jpg);
     background-size: cover;
     opacity: 0.8;
