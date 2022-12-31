@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+*{
+    max-width: 1500px;
+}
+
+header{
+    width: 1500px;
+    height: 100px;
+    background-color: rgba(102, 95, 95, 0.8);
+    padding-left: 50px;
+}
+header p{
+    color: black;
+    font-size: 24px;
+    float: left;
+    padding-top: 5px
+}
+header a{
+    width: 150px;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+    line-height: 100px;
+    float: right;
+    margin-right: 100px;
+    padding-left: 55px;
+}
+header a:hover{
+    background-color: rgb(139, 148, 156);
+    transition: all 0.5s;
+}
+
+
+
+.main-contents{
+    width: 1500px;
+    height: 680px;
+    background-color: rgb(31, 30, 30);
+    background-image: url(photo/rekka-image01.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    
+    left: 50px;
+    bottom: 50px;
+}
+.main-contents h1{
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+    font-size: 100px;
+}
+
+.sub-contents{
+    width: 1500px;
+    height: 600px;
+    background-color: rgb(31, 30, 30);
+    padding: 30px 50px;
+}
+.sns-p{
+    font-size: 60px;
+}
+
+.sns-list{
+    width:  400px;
+    height: 600px;
+    float: left;
+    color: white;
+    padding-left: 50px;
+}
+
+.twitter-account{
+    background-color: rgb(54, 177, 215);
+    color: white;
+    padding-left: 20px;
+}
+.instagram-account{
+    background-color: rgb(190, 82, 244);
+    color: white;
+    padding-left: 10px;
+}
+.facebook-account{
+    background-color: rgb(56, 56, 217);
+    color: white;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.movie-list{
+    width: 400px;
+    height: 600px;
+    float: right;
+    color: white;
+    list-style: none;
+}
+.movie-p{
+    float: right;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.youtube-account{
+    background-color: rgb(216, 28, 28);
+    color: white;
+    padding-left: 30px;
+}
+.tiktok-account{
+    background-color: rgb(219, 219, 51);
+    color: black;
+    padding-left: 50px;
+}
+
+.snsbtn{
+    display: inline-block;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    padding-top: 25px;
+    box-shadow: 0px 3px #000000;
+}
+.snsbtn:hover{
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.snsbtn:active{
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+    opacity: 0.8;
+   }
+
+
+
+footer{
+}
