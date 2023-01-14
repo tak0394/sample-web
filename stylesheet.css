@@ -9,17 +9,20 @@ body {
   }
 
 *{
-    max-width: 1500px;
+    max-width: 1580px;
 }
 
 header{
-    width: 1500px;
+    width: 100%;
     height: 100px;
-    background-color: rgba(102, 95, 95, 0.8);
+    background-color: rgb(9, 0, 0);
     padding-left: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 header p{
-    color: black;
+    color: white;
     font-size: 24px;
     float: left;
     padding-top: 5px
@@ -42,14 +45,10 @@ header a:hover{
 
 
 .main-contents{
-    width: 1500px;
-    height: 680px;
+    width: 0 auto;
+    height: 700px;
     background-image: url(photo/rekka-image01.jpg);
     background-size: cover;
-    opacity: 0.8;
-    
-    left: 50px;
-    bottom: 50px;
 }
 .main-contents h1{
     color: white;
@@ -59,13 +58,19 @@ header a:hover{
 }
 
 .sub-contents{
-    width: 1500px;
+    width: 0 auto;
     height: 600px;
     background-color: rgb(31, 30, 30);
     padding: 30px 50px;
 }
 .sns-p{
+    float: left;
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
     font-size: 60px;
+    padding-left: 20%;
+    line-height: 100px;
 }
 
 .sns-list{
@@ -94,17 +99,19 @@ header a:hover{
 }
 
 .movie-list{
-    width: 400px;
+    width:  400px;
     height: 600px;
     float: right;
     color: white;
-    list-style: none;
 }
 .movie-p{
     float: right;
-    width: 400px;
+    width: 300px;
+    height: 100px;
     margin: 0 auto;
     font-size: 40px;
+    padding-right: 20%;
+    line-height: 100px;
 }
 
 .youtube-account{
@@ -124,7 +131,7 @@ header a:hover{
     width: 120px;
     height: 50px;
     padding-top: 25px;
-    box-shadow: 0px 3px #000000;
+    box-shadow: 2px 6px #000000;
 }
 .snsbtn:hover{
     opacity: 0.5;
@@ -132,7 +139,7 @@ header a:hover{
 }
 .snsbtn:active{
     position: relative;
-    top: 2px;
+    top: 6px;
     box-shadow: none;
     opacity: 0.8;
    }
@@ -140,4 +147,54 @@ header a:hover{
 
 
 footer{
+    width: 0 auto;
+    height: 500px;
+    margin: 50px 0;
+    margin-left: 50px;
+}
+.footer-contact-form{
+    float: left;
+}
+.footer-contact-form-name{
+    margin: 30px 0 20px 0;
+}
+.footer-contact-form-detail{
+    margin: 30px 0 20px 0;
+}
+.footer-contact-form-input{
+    padding-bottom: 10px;
+    padding-right: 60px;
+    font-size: 20px;
+    background-color: rgb(185, 182, 182);
+}
+.footer-contact-form textarea{
+    padding-bottom: 10px;
+    padding-right: 137px;
+    font-size: 16px;
+    background-color: rgb(185, 182, 182);
+}
+.footer-contact-form-submit{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: 1px 5px rgb(79, 77, 77);
+}
+.footer-contact-form-submit:hover{
+    opacity: 1.0;
+}
+.footer-contact-form-submit:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+    left: 1px;
+}
+.footer-to-top{
+    width: 1400px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 150px;
 }
