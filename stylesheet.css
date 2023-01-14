@@ -47,7 +47,7 @@ header a:hover{
 .main-contents{
     width: 0 auto;
     height: 700px;
-    background-image: url(photo/rekka-image01.jpg);
+    background-image: url(rekka-image01.jpg);
     background-size: cover;
 }
 .main-contents h1{
