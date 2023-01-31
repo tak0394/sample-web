@@ -293,3 +293,24 @@ footer{
     font-size: 20px;
     margin-top: 150px;
 }
+
+
+
+
+
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+    * {
+      width: 100%;
+      text-align: center;
+    }
+  
+
+
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
+    * {
+      width: 100%;
+      text-align: center;
+    }
