@@ -301,7 +301,7 @@ footer{
 /* タブレット向けレイアウト */
 @media all and (max-width: 1000px) {
     * {
-      width: 80%;
+      width: 100%;
       text-align: center;
     }
   
@@ -311,6 +311,6 @@ footer{
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
     * {
-      width: 50%;
+      width: 100%;
       text-align: center;
     }
