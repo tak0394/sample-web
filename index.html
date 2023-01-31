@@ -5,14 +5,55 @@
     <title>烈花公式サイトー烈花のマジック部屋</title>              <!-- ↓ Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
   <body>
 
     <header>
-        <p>烈花のマジック部屋</p>
-        <a href="#">ログイン</a>
-    </header>
+        <div class="container">
+          <div class="header-left">
+            <h2>烈花のマジック部屋</h2>
+          </div>
+          <div class="header-right">
+            <div class="login" id="login-show">ログイン</div>
+          </div>
+        </div>
+      </header>
+      <div class="signup-modal-wrapper" id="signup-modal">
+        <div class="modal close-modal">
+          <div>
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+          
+          
+          <div id="signup-form">
+            <h2>Emailで新規登録</h2>
+            <form action="#">
+              <input class="form-control" type="text" placeholder="メールアドレス">
+              <input class="form-control" type="password" placeholder="パスワード">
+              <div id="submit-btn">新規登録</div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="login-modal-wrapper" id="login-modal">
+        <div class="modal close-modal">
+          <div>
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+          
+          
+          <div id="login-form">
+            <h2>Emailログイン</h2>
+            <form action="#">
+              <input class="form-control" type="text" placeholder="メールアドレス">
+              <input class="form-control" type="password" placeholder="パスワード">
+              <div id="submit-btn">ログイン</div>
+            </form>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -23,26 +64,26 @@
     <div class="sub-contents">
         <div class="sns-list">
             <p class="sns-p">SNS</p>
-            <a href="#" class="snsbtn twitter-account">
+            <a href="https://twitter.com/naoto19881213" target="_blank" class="snsbtn twitter-account">
                 <span class="fa fa-twitter"></span>
                 Twitter
             </a>
-            <a href="#" class="snsbtn instagram-account">
+            <a href="https://www.instagram.com/atou_naoto/" target="_blank" class="snsbtn instagram-account">
                 <span class="fa fa-instagram"></span>
                 instagram
             </a>
-            <a href="#" class="snsbtn facebook-account">
+            <a href="https://www.facebook.com/profile.php?id=100011537357488" target="_blank" class="snsbtn facebook-account">
             <span class="fa fa-facebook"></span>
             Facebook
             </a>
         </div>
         <div class="movie-list">
             <p class="movie-p">動画チャンネル</p>
-            <a href="https://www.youtube.com/channel/UCXMeR0rx7ICmgmGskJ9W4cw" class="snsbtn youtube-account">
+            <a href="https://www.youtube.com/channel/UCXMeR0rx7ICmgmGskJ9W4cw" target="_blank" class="snsbtn youtube-account">
                 <span class="fa fa-twitter"></span>
                 Youtube
             </a>
-            <a href="#" class="snsbtn tiktok-account">
+            <a href="https://www.tiktok.com/@MS4wLjABAAAAR-X2e68ICwKmpTaRpxrzD7Y-oF_9TcZOpFSIxK0hucw25gdw6uuRqgirMgSs0QuU?lang=ja-JP" target="_blank" class="snsbtn tiktok-account">
                 <span class="fa fa-tiktok"></span>
                 TikTok
             </a>
@@ -51,8 +92,42 @@
 
 
 
+    <div class="faq-wrapper">
+        <div class="container">
+          <div class="heading"></div>
+          <div class="faq">
+            <ul id="faq-list">
+              <li class="faq-list-item">
+                <h3 class="question">マジック歴はどれくらいですか？</h3>
+                <span>+</span>
+                <div class="answer">
+                  <p>15年前後です。</p>
+                </div>
+              </li>
+              <li class="faq-list-item">
+                <h3 class="question">プロですか？アマチュアですか？</h3>
+                <span>+</span>
+                <div class="answer">
+                  <p>現在はアマチュアですが、プロチームに所属していた事もあります。</p>
+                </div>
+              </li>
+              <li class="faq-list-item">
+                <h3 class="question">得意なマジックは何ですか？</h3>
+                <span>+</span>
+                <div class="answer">
+                  <p>テーブルマジック全般が比較的に得意です。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
     <footer>
         <div class="footer-contact-form">
+            <form method="post" action="formmail.cgi"></form>
             <p class="footer-contact-form-name">お名前（※必ずご入力ください）</p>
             <input class="footer-contact-form-input">
             <p class="footer-contact-form-detail">ご用件（※必ずご入力ください）</p>
@@ -64,5 +139,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
   </body>
 </html>
